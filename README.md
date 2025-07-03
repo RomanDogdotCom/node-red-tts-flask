@@ -174,4 +174,3 @@ Ensure static files are stored in:
 
 - [Coqui TTS](https://github.com/coqui-ai/TTS)  
 - [Node-RED](https://nodered.org)  
-- System design, debugging, and deployment: **you** 💪
