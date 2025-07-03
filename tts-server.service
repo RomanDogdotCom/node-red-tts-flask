@@ -1,0 +1,15 @@
+[Unit]
+Description=Flask TTS Server
+After=network.target
+
+[Service]
+ExecStart=/home/pi/tts-venv/bin/python /home/pi/.node-red/scripts/tts_server.py
+WorkingDirectory=/home/pi/.node-red/scripts
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
